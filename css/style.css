@@ -1,0 +1,173 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: hsl(0, 0%, 95%);
+}
+
+.preview-card {
+  width: 80%;
+  max-width: 1152px;
+  height: 62.5%;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.preview-card > * {
+  padding: 3.25rem;
+}
+
+.sedans {
+  background: hsl(31, 77%, 52%);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+.sedans button:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+.suvs {
+  background: hsl(184, 100%, 22%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.suvs button:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+.luxury button:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin: 3.75rem 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-right: 2rem;
+  line-height: 1.75rem;
+}
+
+button {
+  margin-top: 5.25rem;
+  height: 3.25rem;
+  width: 67.5%;
+  border-radius: 3.25rem;
+  font-weight: 400;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.attribution {
+  color: hsl(184, 100%, 22%);
+  position: absolute;
+  bottom: 0;
+}
+.attribution a, .attribution a:link, .attribution a:visited {
+  color: hsl(31, 77%, 52%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1250px) {
+  .preview-card > * {
+    padding: 3rem;
+  }
+  p {
+    padding-right: 1rem;
+  }
+  button {
+    margin-top: 3.25rem;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .preview-card > * {
+    padding: 2rem;
+  }
+  p {
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .preview-card > * {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .preview-card > * {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .preview-card {
+    flex-direction: column;
+    max-width: 80%;
+    min-width: 325px;
+    height: 90%;
+  }
+  .preview-card > * {
+    padding: 3.25rem;
+    flex: 1;
+  }
+  h1 {
+    margin: 1.75rem 0;
+    font-size: 2.2rem;
+  }
+  p,
+  button {
+    font-size: 0.8rem;
+  }
+  button {
+    margin-top: 2rem;
+  }
+  .sedans {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  button {
+    height: 2.25rem;
+    width: 47.5%;
+    margin-top: 2rem;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.5rem;
+  }
+}
